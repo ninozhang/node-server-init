@@ -1,0 +1,19 @@
+{
+  "name": "node-server",
+  "version": "0.0.1",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {
+    "express": "4.6.1",
+    "commander": "2.6.0",
+    "compression": "1.0.8",
+    "errorhandler": "1.1.1",
+    "http-proxy": "1.1.5"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "env": "dev",
+    "cluster": {
+        "count": 1
+    },
+    "server": {
+        "root": null,
+        "port": 5000
+    },
+    "proxy": {
+        "enabled": false,
+        "host": "http://127.0.0.1:8080"
+    }
+}
