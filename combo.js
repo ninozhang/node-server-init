@@ -32,7 +32,7 @@ module.exports = function (dir) {
             }
 
             res.setHeader('Cache-Control', 'public, max-age=' +
-                (app.get('env') === 'prod' ? 60 * 60 * 24 * 365 : 0));
+                (app.get('env') === 'production' ? 60 * 60 * 24 * 365 : 0));
 
             files = url.split(',');
             files.forEach(function (file) {

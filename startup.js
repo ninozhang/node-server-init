@@ -15,12 +15,12 @@ var fs = require('fs'),
 
     app = server.app,
 
-    DEV = 'dev',
-    PROD = 'prod',
+    DEV = 'development',
+    PROD = 'production',
 
     modes = {
-        dev: ['develop', 'dev'],
-        prod: ['production', 'prod']
+        development: ['development', 'dev'],
+        production: ['production', 'prod']
     },
 
     worker,

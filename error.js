@@ -4,7 +4,7 @@ var errorHandler = require('errorhandler'),
 module.exports = function () {
     var app = server.app,
         logger = app.get('logger') || console;
-    return app.get('env') === 'prod' ?
+    return app.get('env') === 'production' ?
         function (err, req, res, next) {
             var msg = err.stack;
             if (err.mod) {

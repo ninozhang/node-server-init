@@ -7,6 +7,6 @@ module.exports = function (dir) {
     
     var app = server.app;
     return express.static(app.get('root') + dir, {
-        maxAge: app.get('env') === 'prod' ? Infinity : 0
+        maxAge: app.get('env') === 'production' ? Infinity : 0
     });
 };
